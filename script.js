@@ -47,7 +47,7 @@ function generateCalendar(year, month) {
   
   let calendarHTML = '<table><thead><tr>';
   // 요일 헤더 (일 ~ 토)
-  const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
+  const weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
   for (let day of weekDays) {
     calendarHTML += `<th>${day}</th>`;
   }
