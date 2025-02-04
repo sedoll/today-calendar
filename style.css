@@ -1,0 +1,138 @@
+/* 일 */
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 월, 요일 */
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 전체 배경 */
+body {
+    font-family: 'Pretendard-Regular';
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #eeeeee, #eeeeee);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* 일력 카드 스타일 */
+  .date-card {
+    background: white;
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  /* 월 (FEBRUARY 같은 스타일) */
+  .month {
+    font-family: 'Paperlogy-ExtraBold';
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+  
+  /* 날짜 (14 같은 큰 숫자) */
+  .day {
+    font-family: 'SF_HambakSnow';
+    font-size: 8em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* 요일 (WEDNESDAY 같은 스타일) */
+  .weekday {
+    font-family: 'Paperlogy-ExtraBold';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* 명언 스타일 */
+.quote {
+    font-family: 'GowunDodum-Regular';
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .quote span {
+    font-style: italic;
+    font-family: 'GowunDodum-Regular';
+    display: block;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* 달력 스타일 */
+  .calendar-container {
+    background: white;
+    width: 320px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 달력 테이블 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* 요일 헤더 스타일 */
+  th {
+    background-color: #f7f7f7;
+    font-weight: 500;
+  }
+  
+  /* 일요일 빨간색, 토요일 파란색 */
+  th:first-child, td:first-child {
+    color: red;
+  }
+  
+  th:last-child, td:last-child {
+    color: blue;
+  }
+  
+  /* 오늘 날짜 강조 */
+  .today {
+    background-color: #feffb5;
+    font-weight: 700;
+  }
+  

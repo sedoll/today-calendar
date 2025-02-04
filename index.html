@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- SEO 기본 정보 -->
+        <title>오늘의 일력</title>
+        <meta name="description" content="매일 새로운 명언과 함께 오늘의 일력을 확인하세요!">
+        <meta name="keywords" content="일력, 달력, 명언, 오늘의 날짜, 캘린더">
+        <meta name="author" content="오세훈">
+        
+        <!-- Open Graph (Facebook, Kakao) -->
+        <meta property="og:title" content="오늘의 일력">
+        <meta property="og:description" content="매일 새로운 명언과 함께 오늘의 일력을 확인하세요!">
+        <meta property="og:image" content="img.png">
+        <meta property="og:url" content="img.png">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="오늘의 일력">
+        <meta name="twitter:description" content="매일 새로운 명언과 함께 오늘의 일력을 확인하세요!">
+        <meta name="twitter:image" content="img.png">
+        
+        <!-- Favicon (웹사이트 아이콘) -->
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        
+        <!-- CSS 연결 -->
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+  <!-- 상단 헤더 (일력 스타일) -->
+  <div class="date-card">
+    <div id="month" class="month"></div>
+    <div id="day" class="day"></div>
+    <div id="weekday" class="weekday"></div>
+  </div>
+
+  <!-- 달력 영역 -->
+  <div class="calendar-container">
+    <div id="calendar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
